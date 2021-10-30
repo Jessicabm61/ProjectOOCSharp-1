@@ -43,9 +43,9 @@ namespace Course.Entities
             sb.AppendLine(Moment.ToString("dd/MM/yyyy HH:mm:ss"));
             sb.AppendLine(Content);
             sb.AppendLine("Comments:");
-            foreach (Comment c in Comments)
+            foreach (Comment c in Comments) //Chama comments de C
             {
-                sb.AppendLine(c.Text);
+                sb.AppendLine(c.Text); //Imprime a lista comments.Text
             }
             return sb.ToString();
         }
